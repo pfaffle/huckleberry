@@ -3,10 +3,58 @@
   font-family: 'Lato', sans-serif;
 }
 
+:root {
+  --primary-color: hsl(160deg, 100%, 30%);
+  --secondary-color-light: hsl(45deg, 100%, 50%);
+  --secondary-color-dark: hsl(45deg, 100%, 40%);
+  --light-gray: hsl(0deg, 0%, 60%);
+  --dark-gray: hsl(0deg, 0%, 30%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Add styles here! */
+header {
+  margin-top: 6em;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+strong {
+  color: var(--primary-color);
+}
+
+main {
+  background-color: var(--dark-gray);
+  border-top: 8px solid var(--light-gray);
+}
+
+.max-width-wrapper {
+  padding: 1em;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  padding: 1em;
+  width: 50%;
+}
+
+.card {
+  padding: 1em;
+  background-color: var(--white);
+  border-bottom: .5em solid var(--light-gray);
+}
+
+.indented-heading {
+  background-color: var(--secondary-color-light);
+  border-bottom: .5em solid var(--secondary-color-dark);
+  padding: 1em;
+  margin-left: -2em;
+}
